@@ -1,0 +1,71 @@
+%%Panel.HTMLHead%%
+<body>
+<script type="text/javascript">
+$(window).load(function() {
+  // Handler for .ready() called.
+
+
+
+var currentTallest = 0,
+     currentRowStart = 0,
+     rowDivs = new Array(),
+     $el,
+     topPosition = 0;
+
+ $('.equalize').each(function() {
+
+   $el = $(this);
+   topPostion = $el.position().top;
+   
+   if (currentRowStart != topPostion) {
+
+     // we just came to a new row.  Set all the heights on the completed row
+     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+       rowDivs[currentDiv].height(currentTallest);
+     }
+
+     // set the variables for the new row
+     rowDivs.length = 0; // empty the array
+     currentRowStart = topPostion;
+     currentTallest = $el.height();
+     rowDivs.push($el);
+
+   } else {
+
+     // another div on the current row.  Add it to the list and check if it's taller
+     rowDivs.push($el);
+     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+
+  }
+   
+  // do the last row
+   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+     rowDivs[currentDiv].height(currentTallest);
+   }
+   
+ });
+ });
+</script>
+	<div id="Container">
+		%%Panel.Header%%
+		<div id="Wrapper">
+			%%Panel.WrapperBanner%%
+			%%Panel.NewsBreadcrumb%%
+			
+			<h2>News</h2>
+			<div class="Left equalize" id="LayoutColumn1">
+				%%Panel.SideCategoryList%%
+			</div>
+			
+			<div class="Content equalize" id="LayoutColumn2">
+				
+				%%Panel.NewsContent%%
+			</div>
+			<br class="Clear" />
+			
+		</div>
+		%%Panel.Footer%%
+	</div>
+	
+</body>
+</html>

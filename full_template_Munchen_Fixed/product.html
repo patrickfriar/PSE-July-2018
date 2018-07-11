@@ -1,0 +1,37 @@
+%%Panel.HTMLHead%%
+<body class="productPage">
+	<script type="text/javascript" src="%%GLOBAL_CdnAppPath%%/javascript/jquery/plugins/validate/jquery.validate.js?%%GLOBAL_JSCacheToken%%"></script>
+	<script type="text/javascript" src="%%GLOBAL_CdnAppPath%%/javascript/product.functions.js?%%GLOBAL_JSCacheToken%%"></script>
+	<script type="text/javascript" src="%%GLOBAL_CdnAppPath%%/javascript/product.js?%%GLOBAL_JSCacheToken%%"></script>
+
+	<div id="Container">
+	%%Panel.Header%%
+
+	<div id="Wrapper">
+		%%Panel.WrapperBanner%%
+
+			%%Panel.ProductBreadcrumb%%
+			%%Panel.ProductDetails%%
+		<div class="clear"></div>
+	</div>
+	%%Panel.Footer%%
+	<script type="text/javascript">
+function initiateImageZoomer()
+{
+	// clone the A tag and save it for reuse later
+	if (!$('.ProductThumbImage').data('originalAElement')) {
+		$('.ProductThumbImage').data('originalAElement', $('.ProductThumbImage').html());
+	}
+
+	if (ShowImageZoomer) {
+		var fullSrc = $('.ProductThumbImage a').attr('href');
+		$('.ProductThumbImage img').data('full-src', fullSrc).zoomie();
+	}
+
+
+
+}
+</script>
+</div>
+</body>
+</html>

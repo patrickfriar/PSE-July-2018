@@ -1,0 +1,635 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height:100%;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body {
+  margin:0;
+  padding:0;
+}
+body {
+    margin:0;
+    width:100%;
+    color:#494949;
+    overflow-x:hidden;
+}
+a {
+	color:black;
+}
+ul {
+  padding:0;
+}
+ul li {
+  list-style:none;
+}
+body, input {
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+}
+input {
+	padding:5px;
+	font-size:18px;
+}
+strong {
+	font-weight:normal
+}
+/** header start **/
+header {
+    background:whitesmoke;
+    border-bottom:solid 1px #ccc;
+	position:fixed;
+	width:100%;
+	height:44px;
+    top:0;
+    left:0;
+}
+header #Logo {
+	float:left;
+}
+header #Logo img {
+	height:44px;
+}
+nav {
+	font-size:0;
+	transition: all .1s ease-in;
+}
+header button.bars {
+	float:left;
+	display:none;
+}
+nav ul {
+    margin:0;
+    padding:0;
+    float:left;
+}
+nav ul li {
+    display:inline;
+    list-style:none;
+}
+nav ul li a {
+	line-height:44px;
+    display: inline-block;
+    padding:0 20px;
+    color:grey;
+    text-decoration:none;
+    font-size:18px;
+    letter-spacing:1px;
+    transition: all .1s ease-in;
+}
+nav ul li a:hover, nav ul li a.active {
+    background:#494949;
+    color:whitesmoke;
+}
+nav ul li ul {
+	display:none;
+}
+@media screen and (max-width: 714px) {
+    nav {
+        position:fixed;
+        left:-250px;
+        bottom:0;
+        height:100%;
+        z-index:5;
+        width:250px;
+        max-width:95%;
+        background:whitesmoke;
+        top:44px;
+    }
+    nav.open {
+        left:0;
+    }
+    header button.bars {
+	    display:inline-block;
+}
+    nav ul {
+        float:none;
+}
+    nav ul li a {
+		display:block;
+		max-width:100%;
+}
+}
+#HeaderRight {
+    display: inline-block;
+    float: right;
+    font-size:0;
+}
+header button {
+    height:44px;
+    width:44px;
+    border:0;
+    vertical-align:top;
+    background:0;
+    color:grey;
+    font-size:18px;
+    cursor:pointer;
+}
+@media screen and (max-width: 360px) {
+    header button {
+    width: 40px;
+}
+}
+#SearchForm {
+    position: fixed;
+    right: -260px;
+    bottom: 0;
+    height: 100%;
+    z-index: 5;
+    width: 260px;
+    max-width: 95%;
+    background: whitesmoke;
+    border-left: solid 1px #ccc;
+    top: 44px;
+    transition: all .1s ease-in;
+}
+#SearchForm.open {
+    right:0;
+}
+#search_query {
+    height: 40px;
+    line-height: 44px;
+    padding: 0px 10px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    width: 242px;
+    border: 0;
+}
+input:focus {
+    outline: 0;
+}
+button:focus {
+	outline: 0;
+	background: #494949;
+    color: whitesmoke;
+}
+form {
+	margin-top:0;
+}
+#HeaderRight ul {
+	font-size: 14px;
+    position: absolute;
+    background: whitesmoke; 
+    right: 44px;
+    top: 44px;
+    margin: 0;
+    line-height: 30px;
+    padding:15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index:-1;
+    display:none;
+}
+#HeaderRight ul.open {
+    display:block;
+}
+#HeaderRight ul li {
+	list-style:none;
+}
+/** header end **/
+
+/** breadcrumb start **/
+.Breadcrumb li:first-child,
+.Breadcrumb li:last-child {
+  display:none;
+}
+/** breadcrumb end **/
+
+/** loader start **/
+#AjaxLoading {
+    display:inline-block;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    display:none;
+}
+#AjaxLoading img {
+	padding: 12px 0;
+}
+
+/* loader - End */
+
+/* quicksearch */
+#QuickSearch {
+    border-top: 0;
+    position: fixed!important;
+    top: 95px!important; /* importants to override the javascript  */
+    width:242px!important;
+    display:block;
+}
+.QuickSearchResultImage {
+    padding-right:11px;
+}
+.QuickSearchAllResults a {
+    text-align: center;
+    width: 242px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    background: #494949;
+    padding: 7px 0;
+    margin-top: 5px;
+}
+/* quicksearch end */
+
+/* modal start - IMPORTANT THIS IS ONLY IF YOUR USING GREGS FAST CART CUSTOMIZATION!! */
+#ModalOverlay {
+  display:none;
+}
+#ModalContainer {
+    position: relative!important;
+    margin-left: 0!important;
+    z-index: 1!important;
+    width: 550px!important;
+}
+.modalClose {
+    display:none;
+}
+#ModalTitle,
+.ModalTitle {
+    display:none;
+}
+#ModalContent,
+.ModalContent {
+    background:whitesmoke;
+    border: solid 1px #ccc;
+    margin: 0;
+    text-align: left;
+    color: #444;
+    padding: 10px;
+    height: auto!important; /* rids annoying js */
+    margin-bottom:15px;
+}
+/* modal end */
+
+
+#Wrapper {
+  width:100%;
+  padding: 2%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 44px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* begin css for grid */
+
+.columns {
+  font-size:0;
+  width:100%; 
+  max-width:100%;
+}
+.columns p {
+  margin:0;
+}
+.one {
+  /* border:solid 1px #ccc; Remove */
+  /* background:whitesmoke; Remove */
+  /* min-height:150px; Remove */
+  width:100%;
+  background:whitesmoke;
+  margin-bottom:2%;
+  position:relative;
+}
+.one.noguts {
+  margin:0;
+}
+.two, .three, .four, .five, .six {
+  /* border:solid 1px #ccc; Remove */
+  /* background:whitesmoke; Remove */
+  /* min-height:150px; Remove */
+  display:inline-block;
+  margin-right:2%;
+  margin-bottom:2%;
+  overflow:auto;
+  vertical-align:top;
+}
+.center {
+	text-align:center;
+}
+.two:nth-of-type(odd), .three:nth-of-type(3n), .four:nth-of-type(4n), .five:nth-of-type(5n), .six:nth-of-type(6n) {
+  margin-right:0;
+}
+.two {
+  width:49%;
+}
+.two.noguts {
+  width:50%;
+  margin:0;
+}
+@media (max-width: 480px) {
+  .two.shrink {
+    width:100%;
+  }
+}
+.three {
+  width:32%;
+}
+.three.noguts {
+  width:33.333%;
+  margin: 0;
+}
+@media (max-width: 480px) {
+  .three.shrink {
+    width:100%;
+  }
+}
+.four {
+  width:23.5%;
+}
+.four.noguts {
+  width:25%;
+  margin:0;
+}
+@media (max-width: 480px) {
+  .four.shrink {
+    width:49%;
+    margin-right:2%;
+  }
+  .four.shrink:nth-child(2n) {
+    margin-right:0;
+}
+}
+.five {
+  width:18.4%;
+}
+.five.noguts {
+  width:20%;
+  margin:0;
+}
+.six {
+  width:15%;
+}
+.six.noguts {
+  width:16.66%;
+  margin:0;
+}
+.overlay {
+  font-size:18px;
+  padding:2%;
+}
+.middle {
+  display:table;
+  width:100%;
+  height:150px;
+  font-size:18px;
+}
+.middle p, .middle h1 {
+  display:table-cell;
+  vertical-align:middle;
+  margin:0;
+}
+
+/* End css for grid */ 
+
+
+/* footer start */
+
+#ContainerFooter {
+	background:whitesmoke;
+	border-top:solid 1px #ccc;
+}
+#ContainerFooter .two, #ContainerFooter .three {
+	margin-bottom:0;
+}
+#FooterUpper {
+	padding:0 2%;
+}
+#SideNewsletterBox {
+	font-size:0;
+}
+#nl_email {
+	border:0;
+}
+#Subscribe {
+	border:0;
+	cursor:pointer;
+    padding: 5px 15px;
+}
+#ContainerFooter ul {
+	padding:0;
+}
+#ContainerFooter ul li {
+	list-style:none;
+}
+/* footer end */ 
+
+
+/* zoomer css start  */
+
+.zoomPad{
+  position:relative;
+  float:left;
+  z-index:5;
+  cursor:crosshair;
+  cursor: -webkit-zoom-in; 
+  cursor: -moz-zoom-in;
+}
+.zoomPreload{
+   -moz-opacity:0.8;
+   opacity: 0.8;
+   filter: alpha(opacity = 80);
+   color: #333;
+   font-size: 12px;
+   font-family: Tahoma;
+   text-decoration: none;
+   border: 1px solid #CCC;
+   background-color: white;
+   padding: 8px;
+   text-align:center;
+   background-image: url(../images/zoomloader.gif);
+   background-repeat: no-repeat;
+   background-position: 43px 30px;
+   z-index:110;
+   width:90px;
+   height:43px;
+   position:absolute;
+   top:0px;
+   left:0px;
+    * width:100px;
+    * height:49px;
+}
+.zoomPup{
+  overflow:hidden;
+  background-color: #FFF;
+  -moz-opacity:0.6;
+  opacity: 0.6;
+  filter: alpha(opacity = 60);
+  z-index:120;
+  position:absolute;
+  border:1px solid #CCC;
+  z-index:101;
+  cursor:crosshair;
+  cursor: -webkit-zoom-in; 
+  cursor: -moz-zoom-in;
+}
+.zoomOverlay{
+  position:absolute;
+  left:0px;
+  top:0px;
+  background:#FFF;
+  /*opacity:0.5;*/
+  z-index:5000;
+  width:100%;
+  height:100%;
+  display:none;
+  z-index:101;
+}
+.zoomWindow{
+  position:absolute;
+  left:110%;
+  top:40px;
+  background:#FFF;
+  z-index:6000;
+  height:auto;
+  z-index:10000;
+  z-index:110;
+}
+.zoomWrapper{
+  position:relative;
+  border:1px solid #ccc;
+  z-index:110;
+}
+.zoomWrapperTitle{
+  display:block;
+  background:#999;
+  color:#FFF;
+  height:18px;
+  line-height:18px;
+  width:100%;
+  overflow:hidden;
+  text-align:center;
+  font-size:10px;
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index:120;
+  -moz-opacity:0.6;
+  opacity: 0.6;
+  filter: alpha(opacity = 60);
+}
+.zoomWrapperImage{
+  display:block;
+  position:relative;
+  overflow:hidden;
+  z-index:110;
+}
+.zoomWrapperImage img{
+  border:0px;
+  display:block;
+  position:absolute;
+  z-index:101;
+}
+.zoomIframe{
+  z-index: -1;
+  filter:alpha(opacity=0);
+  -moz-opacity: 0.80;
+  opacity: 0.80;
+  position:absolute;
+  display:block;
+}
+/* zoomer css end  */
+
+/* font awesome - NOTE: add each icon individually  */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('%%ASSET_Styles/font/fontawesome-webfont.eot?v=4.4.0%%');
+  src: url('%%ASSET_Styles/font/fontawesome-webfont.eot?#iefix&v=4.4.0%%') format('embedded-opentype'), url('%%ASSET_Styles/font/fontawesome-webfont.woff2?v=4.4.0%%') format('woff2'), url('%%ASSET_Styles/font/fontawesome-webfont.woff?v=4.4.0%%') format('woff'), url('%%ASSET_Styles/font/fontawesome-webfont.ttf?v=4.4.0%%') format('truetype'), url('%%ASSET_Styles/font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular%%') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-bars:before {
+    content: "\f0c9";
+}
+.fa-search:before {
+    content: "\f002";
+}
+.fa-refresh:before {
+    content: "\f021";
+}
+.fa-user:before {
+    content: "\f007";
+}
+.fa-shopping-cart:before {
+    content: "\f07a";
+}
+.fa-times:before {
+    content: "\f00d";
+}
+/* font awesome end  */
+
+/* open sans font */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('font/opensans-bold-webfont.eot');
+    src: url('font/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/opensans-bold-webfont.woff2') format('woff2'),
+         url('font/opensans-bold-webfont.woff') format('woff'),
+         url('font/opensans-bold-webfont.ttf') format('truetype'),
+         url('font/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('font/opensans-regular-webfont.eot');
+    src: url('font/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/opensans-regular-webfont.woff2') format('woff2'),
+         url('font/opensans-regular-webfont.woff') format('woff'),
+         url('font/opensans-regular-webfont.ttf') format('truetype'),
+         url('font/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* open sans font end */
+
+/* footer credit cards start */
+svg path, svg polygon, svg rect {
+    transition: .5s ease all;
+}
+svg#Visa:hover path.VisaBlue {
+    fill: #0058A1;
+}
+svg#Visa:hover path.VisaOrange {
+    fill: #FAA61A;
+}
+svg#Mastercard:hover rect.MCBlue {
+    fill: #003473;
+}
+svg#Mastercard:hover path.MCRed {
+    fill: #ED1C2E;
+}
+svg#Mastercard:hover path.MCOrange {
+    fill: #FCB131;
+}
+svg#Discover:hover path.DiscOrange {
+    fill: #F58220;
+}
+svg#Amex:hover path.AmexBlue {
+    fill: #4473B9;
+}
+svg#Paypal:hover path.PPDarkBlue {
+    fill: #1D3764;
+}
+svg#Paypal:hover path.PPLightBlue {
+    fill: #34679A;
+}
+/* footer credit cards end */

@@ -1,0 +1,1095 @@
+/* UniForm
+------------------------------------------------------------ */
+div.selector,
+div.selector span,
+div.checker span, div.radio span,
+div.uploader,
+div.uploader span.action, div.button, div.button span {
+background-image: url(../images/munchen/icon_sprite.png);
+background-repeat: no-repeat;
+-webkit-font-smoothing: antialiased;
+}
+.selector,
+.radio,
+.checker,
+.uploader, .button,
+.selector *,
+.radio *,
+.checker *,
+.uploader *, .button * {
+margin: 0;
+padding: 0;
+}
+/* INPUT &amp; TEXTAREA */
+input.text, input.email,
+input.password, textarea.uniform {
+color: #444440;
+font-size: 11px;
+font-weight: normal;
+font-style: italic;
+padding: 3px;
+border-top: solid 1px #aaa;
+border-left: solid 1px #aaa;
+border-bottom: solid 1px #ccc;
+border-right: solid 1px #ccc;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+outline: 0;
+}
+input.text:focus, input.email:focus, input.password:focus, textarea.uniform:focus {
+-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+border-color: #999;
+}
+/* SPRITES */
+/* Select */
+div.selector, div.selector span {
+line-height: 25px;
+height: 25px;
+}
+div.selector select {
+/* change these to adjust positioning of select element */
+top: 0px;
+left: 0px;
+}
+/* Checkbox */
+div.checker {
+height: 18px;
+width: 16px;
+}
+div.checker input {
+height: 18px;
+width: 16px;
+}
+div.checker span {
+background-position: 0px -55px;
+height: 18px;
+width: 16px;
+}
+div.checker span.checked, div.checker:active span.checked,
+div.checker.active span.checked, div.checker.focus span.checked, div.checker:hover span.checked {
+background-position: -22px -55px;
+}
+div.checker.disabled span, div.checker.disabled:active span, div.checker.disabled.active span {
+}
+div.checker.disabled span.checked, div.checker.disabled:active span.checked, div.checker.disabled.active span.checked {
+}
+/* Radio */
+div.radio {
+width: 18px;
+height: 18px;
+background: none;
+}
+div.radio input {
+width: 18px;
+height: 18px;
+}
+div.radio span {
+height: 16px;
+width: 16px;
+background-position: 0px -82px;
+}
+div.radio span.checked, div.radio:active span.checked,
+div.radio.active span.checked, div.radio.focus span.checked, div.radio:hover span.checked {
+background-position: -22px -82px;
+}
+/* Uploader */
+div.uploader {
+background-position: 0px -297px;
+height: 28px;
+}
+div.uploader span.action {
+background-position: right -409px;
+height: 24px;
+line-height: 24px;
+}
+div.uploader span.filename {
+height: 24px;
+/* change this line to adjust positioning of filename area */
+margin: 2px 0px 2px 2px;
+line-height: 24px;
+}
+div.uploader.focus, div.uploader.hover, div.uploader:hover {
+background-position: 0px -353px;
+}
+div.uploader.focus span.action, div.uploader.hover span.action, div.uploader:hover span.action {
+background-position: right -437px;
+}
+div.uploader.active span.action, div.uploader:active span.action {
+background-position: right -465px;
+}
+div.uploader.focus.active span.action, div.uploader:focus.active span.action, div.uploader.focus:active span.action, div.uploader:focus:active span.action {
+background-position: right -493px;
+}
+div.uploader.disabled {
+background-position: 0px -325px;
+}
+div.uploader.disabled span.action {
+background-position: right -381px;
+}
+div.button {
+background-position: 0px -523px;
+}
+div.button span {
+background-position: right -643px;
+}
+div.button.focus, div.button:focus, div.button:hover, div.button.hover {
+background-position: 0px -553px;
+}
+div.button.focus span, div.button:focus span, div.button:hover span, div.button.hover span {
+background-position: right -673px;
+}
+div.button.active, div.button:active {
+background-position: 0px -583px;
+}
+div.button.active span, div.button:active span {
+background-position: right -703px;
+color: #555;
+}
+div.button.disabled, div.button:disabled {
+background-position: 0px -613px;
+}
+div.button.disabled span, div.button:disabled span {
+background-position: right -733px;
+color: #bbb;
+cursor: default;
+}
+/* PRESENTATION */
+/* Button */
+div.button {
+height: 30px;
+}
+div.button span {
+margin-left: 13px;
+height: 22px;
+padding-top: 8px;
+font-weight: bold;
+font-size: 12px;
+text-transform: uppercase;
+padding-left: 2px;
+padding-right: 15px;
+}
+/* Select */
+div.selector {
+width: 200px;
+color: #444440;
+font-size: 14px;
+background: #ffffff url(../images/munchen/icon_arrow_down.png) no-repeat right center !important;
+border: 1px solid #ccc;
+height: 28px;
+line-height: 28px;
+min-height: 28px !important;
+margin: 0;
+padding: 3px 0 !important;
+}
+div.selector select {
+color: #444440;
+font-size: 12px;
+line-height: 18px;
+border: solid 1px #fff;
+width: 100%;
+}
+div.selector span {
+padding: 5px 25px 5px 10px !important;
+cursor: pointer;
+background: none;
+line-height: 20px;
+}
+div.selector.disabled span {
+color: #bbb;
+}
+/* Checker */
+div.checker {
+margin-right: 5px;
+}
+/* Radio */
+div.radio {
+margin-right: 3px;
+}
+/* Uploader */
+div.uploader {
+width: 300px;
+cursor: pointer;
+}
+div.uploader span.action {
+width: 85px;
+text-align: center;
+text-shadow: #fff 0px 1px 0px;
+background-color: #fff;
+font-size: 11px;
+font-weight: bold;
+}
+div.uploader span.filename {
+color: #777;
+width: 82px;
+border-right: solid 1px #bbb;
+font-size: 11px;
+ width: 175px;
+}
+div.uploader input {
+width: 190px;
+}
+div.uploader.disabled span.action {
+color: #aaa;
+}
+div.uploader.disabled span.filename {
+border-color: #ddd;
+color: #aaa;
+}
+/*
+CORE FUNCTIONALITY
+Not advised to edit stuff below this line
+-----------------------------------------------------
+*/
+.selector,
+.checker,
+.button,
+.radio,
+.uploader {
+display: -moz-inline-box;
+display: inline-block;
+vertical-align: middle;
+zoom: 1;
+*display: inline;
+}
+.selector select:focus, .radio input:focus, .checker input:focus, .uploader input:focus {
+outline: 0;
+}
+/* Button */
+div.button a, div.button button, div.button input {
+position: absolute;
+}
+div.button {
+cursor: pointer;
+position: relative;
+}
+div.button span {
+display: -moz-inline-box;
+display: inline-block;
+line-height: 1;
+text-align: center;
+}
+/* Select */
+div.selector {
+float: none;
+position: relative;
+display: inline-block;
+*display: inline;
+zoom: 1;
+
+}
+div.selector span {
+display: block;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+padding-left: 10px;
+}
+div.selector select {
+position: absolute;
+opacity: 0;
+filter: alpha(opacity=0);
+/* use '=' here, not ':' */
+-moz-opacity: 0;
+height: 36px;
+border: none;
+background: none;
+}
+/* Checker */
+div.checker {
+position: relative;
+}
+div.checker span {
+display: -moz-inline-box;
+display: inline-block;
+text-align: center;
+}
+div.checker input {
+opacity: 0;
+filter: alpha(opacity=0);
+-moz-opacity: 0;
+display: inline-block;
+background: none;
+}
+/* Radio */
+div.radio {
+position: relative;
+}
+div.radio span {
+display: -moz-inline-box;
+display: inline-block;
+text-align: center;
+}
+div.radio input {
+opacity: 0;
+filter: alpha(opacity=0);
+-moz-opacity: 0;
+text-align: center;
+display: inline-block;
+background: none;
+}
+/* Uploader */
+div.uploader {
+position: relative;
+overflow: hidden;
+cursor: default;
+margin-bottom: 10px;
+}
+div.uploader span.action {
+float: left;
+display: inline;
+padding: 2px 10px;
+width: auto;
+overflow: hidden;
+cursor: pointer;
+}
+div.uploader span.filename {
+padding: 0px 10px;
+float: left;
+display: block;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+cursor: default;
+}
+div.uploader input {
+opacity: 0;
+filter: alpha(opacity=0);
+-moz-opacity: 0;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+float: right;
+height: 25px;
+border: none;
+cursor: default;
+width: 175px !important;
+}
+
+.ProductList .pname,
+.brand-name{
+float: left;
+width: auto;
+margin: 0;
+padding-right: 10px;
+color: #1f1f1c;
+font-size: 13px;
+}
+.ProductList .pname:hover,
+.brand-name:hover {
+color: #F94743;
+}
+.brand-name{
+padding: 5px 0 5px 4%;
+text-align: left;
+min-height: 30px;
+
+}
+
+.ProductList .pname{
+margin-bottom: 0;
+}
+
+.ProductList .p-name a,
+.fastCartBottom .ProductList .ProductDetails a{
+color: #1f1f1c;
+}
+
+.ProductList .p-name a:hover,
+.brand-name:hover,
+.fastCartBottom .ProductList .ProductDetails a:hover{
+color: #f94743;
+}
+
+.CompareButton .btn {
+    background-color: #333;
+}
+.CompareButton .btn:hover {
+    background-color: #F94743;
+}
+
+#CheckoutStepPaymentDetails input[type=submit] {
+    margin: 0 20px;
+}
+#CheckoutStepPaymentDetails input[type=submit]:hover {
+    background-color: #1f1f1c;
+}
+
+.ProductList li .ProductActionAdd .icon-Add.To,
+.ProductList li .ProductActionAdd .icon-Choose.Options {
+float: left;
+height: 36px;
+margin: 0!important;
+background: #F94743 url(../images/munchen/viewOpt.png) no-repeat 10px 50% !important;
+line-height: 36px;
+padding: 0 10px 0 35px !important;
+color: #fff;
+font-weight: 500;
+-moz-transition: background-color 100ms ease;
+-webkit-transition: background-color 100ms ease;
+-o-transition: background-color 100ms ease;
+transition: background-color 100ms ease;     
+}
+.ProductList li .ProductActionAdd .icon-Add.To {
+background: #F94743 url(../images/munchen/addCart.png) no-repeat 10px 50% !important;
+padding-left: 40px !important;
+}
+
+.ProductList li .ProductActionAdd .icon-Add.To:hover, 
+.ProductList li .ProductActionAdd .icon-Choose.Options:hover{
+background-color: #333 !important;
+ -moz-transition: background-color 100ms ease;
+-webkit-transition: background-color 100ms ease;
+-o-transition: background-color 100ms ease;
+transition: background-color 100ms ease;
+}
+
+.btn-addto{
+    color: #f94743;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    border: solid 0px;
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background:transparent  url(../images/munchen/wish.png) no-repeat 100% 50%;
+    -moz-transition: background-color 100ms ease;
+    -webkit-transition: background-color 100ms ease;
+    -o-transition: background-color 100ms ease;
+    transition: background-color 100ms ease;
+}
+.btn-addto:hover {
+    color: #1F1F1C;
+}
+.AddToWishlistLink {
+    color: #F94743;
+}
+
+.ProductList .p-price{
+    float: left;
+    padding: 6px 0 0 0;
+    font-size: 13px;
+    font-weight: bold;
+    clear: both;
+}
+
+/* in list view, the new .p-price should be shown inline below the product title. This undoes the defaults to p-price*/
+.ProductList.List .p-price {
+    float: none;
+    display: inline;
+}
+
+.right{
+float: right;
+}
+
+
+.txt24{
+font-size: 24px!important;
+}
+.txt24 em{
+font-style: normal !important;
+}
+
+
+.txt17-bold{
+font-size: 17px;
+font-weight: 700;
+margin-bottom: 0;
+}
+
+.txt-bold{
+font-weight: 700!important;
+}
+
+.txt-black{
+color: #1f1f1c!important;
+}
+
+
+
+.p-relative{
+position: relative;
+}
+
+.p-absolute{
+position: absolute;
+left: 50px;
+bottom: 33%;
+}
+
+.icon, .icon-add{
+float: left;
+width: 15px;
+height: 18px;
+background: url(../images/munchen/icon_sprite.png) no-repeat 0 -24px;
+}
+
+.icon-add{
+position: absolute;
+right: 0;
+top: 9px;
+width: 35px;
+height: 35px;
+background-position: 0 -107px;
+}
+
+.icon-delete,
+.icon-edit,
+.icon-share,
+#WishLists .txt-hide a{
+float: left;
+width: 18px;
+height: 21px;
+margin-right: 10px;
+background: url(../images/munchen/icons_off.png) no-repeat -170px -152px;
+}
+
+.icon-delete:hover,
+.icon-edit:hover,
+.icon-share:hover,
+#WishLists .txt-hide a:hover,
+#WishLists .txt-hide .icon-delete:hover,
+#WishLists .txt-hide .icon-edit:hover{
+background: url(../images/munchen/icons_on.png) no-repeat -170px -152px;
+}
+
+.icon-edit,
+.icon-edit:hover,
+#WishLists .txt-hide .icon-edit,
+#WishLists .txt-hide .icon-edit:hover{
+background-position: -140px -152px;
+}
+
+.icon-delete,
+.icon-delete:hover,
+#WishLists .txt-hide .icon-delete,
+#WishLists .txt-hide .icon-delete:hover{
+background-position: -108px -152px;
+}
+
+.c-wrap{
+width: 980px;
+margin: 0 auto;
+display: block;
+clear: both;
+}
+.sub-title{
+display: block;
+clear: both;
+padding: 1em 0;
+font-size:16px;
+margin-bottom: 0px;
+}
+
+.txt-center{
+text-align: center!important;
+}
+
+.txt-left{
+text-align: left!important;
+}
+
+.sub-title1{
+display: block;
+margin: 15px 0;
+background: url(../images/white/bg_heading_small.png) no-repeat 10px center;
+}
+
+.sub-title1.l1{
+margin: 8px 0;
+}
+
+.sub-title1 .bul{
+margin: 0 10px;
+padding: 0 30px 5px 30px;
+background: url(../images/white/bg_heading_small.png) no-repeat right center;
+}
+
+.Content h3.fline {
+padding: 10px 0 !important;	
+font-size: 16px !important;
+}
+.Content h3.fline span {
+padding: 0 30px 0 0 !important;	
+display: inline-block;
+*display: inline;
+zoom: 1;	
+}
+
+small{
+font-size: 12px!important;
+}
+
+strong, b{
+font-weight: 600;
+color: #1f1f1c;
+}
+
+ul{
+margin: 0 0 20px 30px;
+list-style-image: url(../images/munchen/bullet.png);
+}
+
+ul ul ul{
+list-style-image: url(../images/munchen/bullet_line.png);
+}
+
+ul li{
+padding: 2px 0;
+}
+
+.multiStep, 
+.multiStep li {
+list-style-type: none;
+margin: 0;
+padding: 0;
+list-style-image: none;
+}
+.multiStep {
+text-align: center;
+border-bottom: 1px solid #F1F1F1;
+position: relative;
+min-height: 1px;
+zoom: 1;
+}
+.multiStep li {
+color: #e3e1e1;	
+font-size: 16px;
+font-weight: bold;
+margin: 0 20px;
+position: relative;
+display: inline-block;
+*display: inline;
+zoom: 1;
+padding: 20px 0;
+}
+.multiStep li a {
+color: #e3e1e1;	
+}
+.multiStep li .icon  {
+background: url("../images/munchen/nav_active.png") no-repeat;
+display: block;
+float: left;
+height: 8px;
+left: 50%;
+margin-left: -7px;
+position: absolute;
+bottom: -5px;
+width: 13px;
+}
+.multiStep li.ActivePage, .multiStep li.ActivePage a {
+color: #f94743;
+}
+
+.multiStep li.Completed, .multiStep li.Completed a {
+color: #1f1f1c;
+}
+.li-list {
+border-bottom: 1px solid #DEDEDE;
+padding: 20px 0;
+}
+.li-list h4 {
+position: relative;
+z-index: 1;
+}
+.li-list form {
+position: relative;
+z-index: 10;
+}
+
+.icon, .icon-add {
+background: url("../images/munchen/icon_sprite.png") no-repeat scroll 0 -24px transparent;
+float: left;
+height: 18px;
+width: 15px;
+}
+
+.icon-add {
+background: #f94743 url("../images/munchen/add.png") no-repeat scroll 50% 50%;
+float: left;
+height: 36px;
+margin: 0 !important;
+padding: 0 !important;
+transition: background-color 100ms ease 0s;
+width: 36px;
+border-radius: 18px;
+-moz-border-radius: 18px;
+-webkit-border-radius: 18px;
+-moz-transition: background-color 100ms ease;
+-webkit-transition: background-color 100ms ease;
+-o-transition: background-color 100ms ease;
+transition: background-color 100ms ease;     
+}
+.icon-add:hover {
+background-color: #333;    
+-moz-transition: background-color 100ms ease;
+-webkit-transition: background-color 100ms ease;
+-o-transition: background-color 100ms ease;
+transition: background-color 100ms ease;
+}
+
+.clear, .jta-clear {
+clear:both;
+display: block;
+overflow: hidden;
+visibility: hidden;
+height: 0;
+}
+
+/* btn styles */
+
+.btn, .btn-clear, #CheckoutStepPaymentDetails input[type=submit]{
+cursor: pointer;
+color: #fff !important;
+height: 35px!important;
+line-height: 35px!important;
+font-size: 14px;
+font-weight: 500;
+background: #F94743;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border: none;
+padding: 0 20px;
+text-transform: none;
+-webkit-appearance: none;
+}
+a.btn{
+float: left;
+}
+
+.btn a{
+color: #ffffff!important;
+}
+
+.btn-secondary{
+font-size: 13px;
+background: #1f1f1c;
+height: 35px!important;
+line-height: 35px!important;
+padding: 0 15px;
+}
+
+.Button, .btn-clear {
+cursor: pointer;
+color: #fff !important;
+height: 35px !important;
+line-height: 35px!important;
+font-size: 14px;
+font-weight: bold;
+background: #1f1f1c;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border: 1px solid #000;
+padding: 0 20px;
+-webkit-transition: all 100ms ease; 
+-moz-transition: all 100ms ease; 
+transition: all 100ms ease;
+}
+.Button:hover, .btn-clear:hover {
+background-color: #f94743;
+border: 1px solid #f94743;
+-webkit-transition: all 100ms ease; 
+-moz-transition: all 100ms ease; 
+transition: all 100ms ease;
+}
+a.Button{
+float: left;
+}
+
+.Button a{
+color: #ffffff!important;
+}
+
+.btn-small, .QuickSearchAllResults a{
+font-size: 13px;
+background: #1f1f1c;
+height: 30px!important;
+line-height: 30px!important;
+padding: 0 15px;
+-webkit-transition: all 100ms ease; 
+-moz-transition: all 100ms ease; 
+transition: all 100ms ease;
+}
+
+.btn-small:hover {
+background-color: #f94743 !important;
+-webkit-transition: all 100ms ease; 
+-moz-transition: all 100ms ease; 
+transition: all 100ms ease;
+}
+
+.btn-addtocart{
+    background-color: #f94743;
+    border-color: #f94743;
+background-image: url(../images/munchen/icon_shop_bag.png);
+background-repeat: no-repeat;
+background-position: 15px 8px;
+padding-left: 35px;
+}
+
+.btn-arrowleft{
+background-image: url(../images/munchen/icon_arrow_left.png);
+background-repeat: no-repeat;
+background-position: 15px center;
+padding-left: 35px;
+}
+
+.btn-arrowright{
+background-image: url(../images/munchen/icon_arrow_right.png);
+background-repeat: no-repeat;
+background-position: right center;
+padding-right: 35px;
+}
+
+.btn-addtocart:hover,
+.btn:hover{
+background-color: #1F1F1C;
+border-color: #1F1F1C;
+}
+
+.btn-clear{
+color: #f94743!important;
+background: none !important;
+padding: 0 8px;
+}
+.btn-clear:hover{
+color: #1f1f1c!important;
+background: none !important;
+}
+
+.full-width{
+display: block;
+clear: both;
+padding: 0 !important;
+}
+.full-width .zeroLeft {
+padding-left: 0 !important	
+}
+
+
+.cpage .Content.Wide{
+padding: 30px 0 0 45px;
+width: 635px;
+border-left: 1px solid #e8e8e8;
+}
+
+
+.productlist-page.Content{
+width: 100%;
+padding: 0;
+}
+
+.productlist-page.Content .ProductList.List .ProductDetails{
+width: 640px;
+}
+
+h6 a{
+color: #000000!important;
+}
+h6 a:hover{
+color: #f94743!important;
+}
+
+.product-nav{
+display: block;
+padding: 10px 0 0 0;
+clear: both;
+min-height: 45px;
+}
+.productlist-page.Content .product-nav{
+border: none;
+}
+
+.product-nav.btm{
+border: none;
+padding-bottom: 0!important;
+border-top: 1px solid #e8e8e8!important;
+}
+
+.nav-prev,
+.nav-next{
+float: left;
+width: 12px;
+height: 12px;
+margin-top: 5px;
+text-indent: 99px;
+overflow: hidden;
+background: url(../images/munchen/icon_sprite.png) no-repeat -42px -27px;
+}
+
+.nav-next{
+background-position: -54px -27px;
+}
+
+.mtop{
+margin-top: 27px;
+}
+
+.pbtm{
+padding-bottom: 30px;
+}
+
+.no-ptop{
+padding-top: 0!important;
+}
+
+.list{
+margin: 0;
+padding: 10px 0;
+list-style: none;
+}
+
+.list li{
+padding-top: 5px;
+}
+
+.list-icon,
+.list-news{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.list-icon li{
+color: #1f1f1c;
+line-height: 23px;
+padding: 0 0 10px 0;
+}
+
+.list-icon .icon{
+width: 23px;
+height: 23px;
+margin: 0 15px 0 0;
+background-position: -41px 0;
+}
+
+.list-news li p{
+margin-bottom: 10px;
+}
+
+.form{
+display: block;
+clear: both;
+width: 100%;
+margin: 0;
+padding: 10px 0 0  0;
+list-style: none;
+}
+
+.form li{
+display: block;
+clear: both;
+width: 100%;
+padding: 10px 0;
+}
+
+.form li label,
+.form dt{
+float: left;
+width: 175px;
+padding: 7px 25px 0 0;
+text-align: right;
+line-height: 22px;
+}
+
+.form input.Textbox {
+width: 180px;
+}
+
+.form dd{
+margin-left: 0;
+float: none;
+}
+
+.boxin{
+display: block;
+width: 100%;
+padding: 30px 0 25px 0;
+border-bottom: 1px solid #dedede;
+}
+
+.boxin .mtop{
+margin-top: 20px;
+}
+
+.addto{
+display: block;
+clear: both;
+border-top: 1px solid #ececec;
+}
+
+.addto .BulkDiscount{
+float: left;
+}
+
+.addto #SideProductAddToWishList{
+padding: 0;
+margin: 20px 0 0 10px;
+float: left;
+display: block;
+width: auto;
+clear: none;
+}
+
+.txt-hide{
+text-indent: -999px; 
+overflow: hidden;
+color: #ffffff;
+}
+
+#Wrapper .left-content .ProductList{
+border: none;
+}
+.left-content .ProductList li{
+width: 98px!important;
+}
+.left-content .ProductList .ProductImage{
+width: 97px!important;
+height: 95px!important;
+min-width: 97px!important;
+min-height: 95px!important;
+overflow: hidden;
+border: 1px solid #dbdbdb;
+}
+.left-content .ProductList .p-name{
+float: left;
+font-size: 12px;
+margin: 5px 0 25px 0;
+padding: 5px 0 3px 5%;
+border-left: 2px solid #ececec;
+}
+
+.boxin h3 {
+font-weight: normal !important;
+line-height: 1.25 !important;
+position: relative;
+color: #312E29 !important;
+font-size: 26px !important;
+font-weight: 600 !important;
+}
+
+.ProductList .p-price, .ProductPriceRating {
+    width: auto !important;
+    margin-top: 5px !important;
+}
+.ProductList .p-price {
+    padding-top:2px;
+}
+.ProductPriceRating {
+    float: right !important;
+    clear: none !important;
+    padding-right: 10px !important;
+}
+a.CustomizeItemLink {
+    font-size: 11px;
+    color: #F94743;
+}
+a.CustomizeItemLink:hover {
+    color: #312E29;

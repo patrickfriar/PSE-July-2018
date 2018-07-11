@@ -1,0 +1,136 @@
+
+/* Gobal Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* General */
+body {
+	font-size: 14px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+	margin: 10px;
+}
+
+p {
+	line-height: 1.3;
+	margin-bottom: 8px;
+}
+
+h2 {
+    color: #F94743;
+    font-size: 38px;
+    margin: 0;
+    padding: 10px 0 30px;
+}
+
+h3 {
+	color: #444;
+}
+
+a {
+	color: #010101;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #93D7D1;
+}
+
+
+a.disabled {
+	color: black;
+	text-decoration: none;
+	cursor: auto;
+}
+a.disabled:hover {
+	color: black;
+}
+
+img, a img {
+	border:none;
+}
+
+/* Page Breadcrumbs */
+.Nav {
+	font-size: 0.9em;
+	padding-bottom: 4px;
+	clear:both;
+	padding-top:15px;
+}
+
+.Nav .PrevLink {
+	font-size:16px;
+}
+.Nav .NextLink {
+	font-size:16px;
+}
+.ImageCount {
+	color:gray; font-size:12px;
+}
+
+.Title {
+	padding-bottom: 10px;
+}
+.ProductTinyImageList ul li {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden;
+	float: left;
+	border: 1px solid #EDEDED;
+	margin-left:3px;
+
+}
+.ProductTinyImageList ul li.selected {
+	border: solid #000 1px;
+}
+
+.ProductTinyImageList ul li div {
+	display: table-cell;
+	text-align: center;
+}
+
+.ProductTinyImageList ul li .TinyOuterDiv {
+	border: 0px solid white;
+	display: block;
+
+}
+
+.ProductZoomImageBox {
+	display:table-cell;
+}
+
+.ProductZoomImageBox, .ProductZoomImageBox *{
+	margin:auto;
+	vertical-align: middle;
+
+}
+
+
+.ProductTinyImageList ul {
+	margin: 0pt;
+	padding: 0pt;
+	position: relative;
+	list-style-type: none;
+	white-space:nowrap;
+	width: auto;
+}
+
+#ImageScrollPrev,
+#ImageScrollNext {
+	float: left;
+	background:none;
+	border:none;
+	margin-top:25px !important;
+	cursor:pointer;
+	display: none;
+}
+
+.ProductTinyImageList {
+	float: left;
+	margin-top:10px;
+	white-space:nowrap;
+	width: 80%;
+	overflow: hidden;
+}

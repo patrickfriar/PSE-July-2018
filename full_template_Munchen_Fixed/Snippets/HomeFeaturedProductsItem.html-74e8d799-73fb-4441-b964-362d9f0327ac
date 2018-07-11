@@ -1,0 +1,8 @@
+<li class="%%GLOBAL_AlternateClass%%">
+	<div class="ProductImage" data-product="%%GLOBAL_ProductId%%">
+		%%GLOBAL_ProductThumb%%
+	</div>
+	<div class="ProductDetails">
+		<a href="%%GLOBAL_ProductLink%%">%%GLOBAL_ProductName%%</a>
+	</div>
+</li>
