@@ -1,0 +1,31 @@
+%%Panel.HTMLHead%%
+<body>
+	<div id="Container">
+		%%Panel.Header%%
+		<div id="Wrapper">
+			%%Panel.WrapperBanner%%
+			%%Panel.CategoryBreadcrumb%%
+			<div class="productlist-page">
+				%%Panel.CategoryHeading%%
+				%%Banner.TopBanner%%
+				<button class="js-faceted-search-action btn">%%LNG_FilterBy%%</button>
+				<div class="Left fleft js-faceted-search-column faceted-search-column">
+					<h2>Filters</h2>
+					%%Panel.FacetedSearch%%
+				</div>
+				<div class="Content Wide %%GLOBAL_ExtraCategoryClass%%" id="LayoutColumn1">
+					<div class="product-nav">
+						%%SNIPPET_CategorySortBox%%
+						%%Panel.CategoryPagingTop%%
+						<br class="Clear" />
+					</div>
+					%%Panel.CategoryContent%%
+				</div>
+				<br class="Clear" />
+			</div>
+		</div>
+		%%Banner.BottomBanner%%
+		%%Panel.Footer%%
+	</div>
+</body>
+</html>

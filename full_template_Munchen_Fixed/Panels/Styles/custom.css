@@ -1,0 +1,115 @@
+.PageMenu #SideCategoryList li a:hover{
+background:#262626;
+}
+.PageMenu #SideCategoryList li a:hover {
+color: rgb(255, 255, 255);
+}
+.PageMenu #SideCategoryList li li a:hover {
+    background-color: #262626;
+    color: #fff;
+}
+.about > h2 {
+    font-size: 13px;
+}
+.list_ul > li {
+    font-size: 13px;
+}
+p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.TitleHeading {
+    display: none;
+}
+.delivery span {
+    text-decoration: none !important;
+}
+
+.about2 > h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+/*.Left #SideCategoryList .sf-horizontal li ul {
+position: absolute!important;
+top:4em;
+background: white!important;
+z-index: 2000!important;
+float: left!important;
+left:137px!important;
+    border:1px solid #ccc!important;
+}*/
+.BlockContent
+{
+overflow: visible!important;
+
+}
+
+.sf-menu li {
+    float: left;
+    position: initial!important;
+}
+
+.trust {
+    bottom: 86px;
+    float: right;
+    height: 30px;
+    /*left: 8px;*/
+    position: relative;
+    right: 0;
+    width: 12%;
+}
+.trust > img {
+    width: 77%;
+}
+
+.TopMenu li.account {
+    border: medium none;
+    bottom: 15px;
+    float: right;
+    margin-right: 9%;
+    position: relative;
+}
+
+.Block panel moveable productdescription, .ProductDescriptionContainer {
+overflow-y: scroll;
+height: 116px;
+}
+.PageMenu .sf-menu li {
+    float: none;
+    position: relative !important;
+}
+.sf-menu li {
+    float: left;
+    position: initial !important;
+}
+.phoneIcon img {
+    padding: 0 2px;
+    width: 25px;
+    float:left;
+}
+.phone {
+    float: left;
+    margin: 6px auto;
+}
+.EstimateShippingLink {display:none;}
+
+.custom_content .icon4 {
+    background-image: url("https://cdn6.bigcommerce.com/s-6r5e5txk/product_images/uploaded_images/phone.jpg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+.custom_content .icon4 {
+    margin-top: 5px;
+    padding-left: 25px;
+}
+#topcontrol {
+    bottom: 0px !important;
+    left:15px !important;
+}
+/*.Left #SideCategoryList .sf-horizontal li ul li ul {
+    position: absolute !important;
+    top: 0 !important;
+}*/
+
+/* .CartContents tfoot .SubTotal td div{font-family:"Open Sans",Arial,Helvetica,sans-serif;} */

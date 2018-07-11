@@ -1,0 +1,307 @@
+/**
+ *   Bigcommerce Munchen
+ *   Style Initialisation
+ */
+
+// @Section - Store Header
+#Container{
+border-top:7px solid @color-header-border;
+}
+
+#Header{
+background-color:@color-header-background;
+}
+
+#TopMenu{
+background-color:@color-header-background;
+}
+
+#TopMenu li a,
+.currency-converter p span,
+.PageMenu li a:hover, .PageMenu .ActivePage a {
+color: @color-header-links;
+}
+
+.PageMenu li.over > a.hasSub,
+.PageMenu li ul li a:hover {
+color: @color-header-links !important;
+}
+
+#SearchForm .Button:hover {
+background-color: @color-header-links;
+}
+
+.PageMenu{
+background-color:@color-header-background;
+}
+
+#Logo h1 a{
+color:@color-store-name;
+}
+
+.PageMenu{
+border-top:1px solid @color-menu-border;
+}
+
+#Outer .PageMenu .sf-menu > li:hover {
+border-top-color: @color-header-links;
+}
+
+.PageMenu li a{
+color:@color-menu-text;
+}
+
+// @Section - Store Footer
+
+#FooterUpper{
+border-top:5px solid @color-footer-borders;
+}
+
+#ContainerFooter{
+background-color:@color-footer-background;
+}
+
+#Footer .PageMenu ul{
+background-color:@color-footer-background;
+}
+
+#ContainerFooter h2{
+color:@color-section-heading !important;
+border-bottom:1px solid lighten(@color-section-heading,45%);
+}
+
+#Footer .PageMenu li a{
+color:@color-section-heading !important;
+}
+
+#Footer .PageMenu li{
+border-left:1px solid @color-section-heading;
+}
+
+#FooterUpper li a{
+color:@color-links;
+}
+
+#ContainerFooter strong a{
+color:@color-links;
+}
+
+#HomeRecentBlogs strong, b{
+color:@color-links;
+}
+
+#Footer p{
+color:@color-links;
+}
+
+#Footer p a{
+color:@color-links;
+}
+
+#ContainerFooter .NewsletterSubscription .Button{
+border:1px solid darken(@color-button,10%);
+background-color:@color-button;
+}
+
+#ContainerFooter .NewsletterSubscription .Button:hover{
+border:1px solid @color-button;
+background-color:lighten(@color-button,10%) !important;
+}
+
+#Footer .PageMenu ul{
+border-bottom:1px solid @color-footer-borders;
+}
+
+#Footer ul{
+border-top:1px solid @color-footer-borders;
+}
+
+// @Section-Home Page
+
+#HomeFeaturedProducts h3,
+#HomeNewProducts h3 {
+color:@color-section-headings !important;
+}
+
+#HomeFeaturedProducts .ProductList .pname,
+#HomeNewProducts .ProductList .pname {
+color:@color-product-names ;
+}
+
+#HomeFeaturedProducts .ProductDetails em,
+#HomeNewProducts .ProductDetails em{
+color:@color-product-prices;
+}
+
+#home .ProductList li .ProductActionAdd a{
+background-color:@color-buttons !important;
+}
+
+#home .ProductList li .ProductActionAdd a:hover{
+background-color: #333 !important;
+}
+
+// @Section-Product Page
+#ProductDetails h6 a{
+color:@color-product-description !important;
+}
+
+ .PrimaryProductDetails h2{
+color:@color-product-name;
+}
+
+.left-content .ProductList .ProductDetails .pname{
+color:@color-product-name;
+}
+
+.ProductDetailsGrid .DetailRow.PriceRow .Value em{
+color:@color-product-price;
+}
+
+.left-content .ProductList em.p-price{
+color:@color-product-price;
+}
+
+#prodAccordion .Block.current h2{
+color:@color-product-description-headings;
+}
+
+#prodAccordion .Block h2{
+color:@color-product-description-headings;
+}
+
+#SimilarProductsByCustomerViews h6{
+color:@color-product-description-headings;
+}
+
+#ProductDetails .prodAccordionContent{
+color:@color-product-description;
+}
+
+.ProductDetailsGrid .Label{
+color:@color-product-description;
+}
+
+div.selector span{
+color:@color-product-description;
+}
+
+#ProductDetails .ProductMain{
+color:@color-product-description;
+}
+
+#ProductDescription p strong{
+color:@color-product-description;
+}
+
+#ProductDetails .btn-addtocart{
+background-color:@color-add-to-cart-button;
+border:1px solid darken(@color-add-to-cart-button, 10%);
+}
+
+.btn-addto{
+color:@color-add-to-wishlist-button ;
+}
+
+#ProductDetails h2{
+color:@color-product-name;
+}
+
+ #QuickViewProductDetails .productAttributeLabel {
+color:@color-product-description;
+}
+
+#ModalContent a, .ModalContent a{
+color:@color-product-description;
+}
+
+// @Section-Category page
+
+h2, .TitleHeading {
+color:@color-category-title;
+}
+
+
+
+.Left #SideCategoryList .sf-menu a,
+.Left #SideCategoryList h2 span,
+.Left .slist h2 span{
+color:@color-category-navigation;
+}
+
+#CategoryContent .ProductList .pname,
+#CategoryContent .ProductList .p-name a {
+color:@color-category-product-name;
+} 
+
+
+#CategoryContent .ProductList .p-price{
+color:@color-category-product-price;
+}
+
+.ProductList li .ProductActionAdd .icon-Add.To,
+#CategoryContent .ProductList li .ProductActionAdd .icon-Choose.Options {
+background-color:@color-category-buttons !important;
+}
+
+.ProductList li .ProductActionAdd .icon-Add.To:hover,
+#CategoryContent .ProductList li .ProductActionAdd .icon-Choose.Options:hover {
+background-color:#333 !important;
+}
+
+#CategoryContent .btn{
+background-color:@color-compare-selected-button;
+}
+
+//Background & Fonts
+
+body{
+background:@color-page-background;
+}
+
+.ProductList .ProductDetails{
+font-family:@font-page-text;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+font-family: @font-heading-text;
+}
+
+
+/* --- Faceted Search --- */
+
+.facet-container {
+    border-top: 1px solid @color-border;
+    
+    [class^="js-facet-clear"] {
+        color: lighten(@color-page-text, 40%);
+
+        &:hover {
+            color: lighten(@color-page-text, 20%);
+        }
+    }
+
+    .btn-facet-more-options {
+        color: @color-page-text !important;
+
+        &:hover {
+            color: @color-links;
+        }
+    }
+
+    .facet-option:hover {
+        background: @color-border;
+    }
+
+    .facet-option .facet-option-product-count {
+        color: lighten(@color-page-text, 40%);
+    }
+}
+
+.js-faceted-search-container > [class^='js-facet-']:last-of-type .facet-container {
+    border-bottom:  1px solid @color-border;
+}
+
+.js-faceted-showing-container .facet-container {
+    border-top: 0;
+}

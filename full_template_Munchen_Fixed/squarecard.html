@@ -1,0 +1,38 @@
+<p class="InfoMessage Message">
+    %%LNG_CreditCardPaymentIntro%%
+</p>
+
+<p id="errors" class="ErrorMessage Message" style="display: %%GLOBAL_HideCreditCardError%%">
+    <strong>%%LNG_CreditCardProcessingError%%</strong><br />
+    %%GLOBAL_CreditCardErrorMessage%%
+    <span id="sq-errors"></span>
+</p>
+
+<form id="square-cc-form" action="%%GLOBAL_ShopPathSSL%%/checkout.php?action=process_payment" method="post" novalidate>
+    <input type="hidden" id="sq-card-nonce" name="sq-card-nonce">
+    <input type="hidden" id="sq-card-digits" name="sq-card-digits">
+    <input type="hidden" id="sq-card-type" name="sq-card-type">
+    <div class="FormContainer HorizontalFormContainer">
+        <dl>
+            <dt><span class="Required">*</span> %%LNG_CreditCardCreditCardNo%%:</dt>
+            <dd><div id="sq-card-number"></div></dd>
+
+            <dt><span class="Required">*</span> %%LNG_CreditCardExpirationDate%%:</dt>
+            <dd><div id="sq-expiration-date"></div></dd>
+
+            <dt><span class="Required">*</span> %%LNG_CreditCardCardCode%%:</dt>
+            <dd><div id="sq-cvv"></div></dd>
+
+            <dt><span class="Required">*</span> %%LNG_CreditCardPostcode%%:</dt>
+            <dd><div id="sq-postal-code"></div></dd>
+
+            <dt>&nbsp;&nbsp; %%LNG_CreditCardTotalAmount%%:</dt>
+            <dd><em class="ProductPrice">%%GLOBAL_OrderAmount%%</em></dd>
+        </dl>
+        <p class="Submit">
+            <input class="btn" type="submit" id="sq-submit" onclick="sqSubmitButtonClick(event)" value="%%LNG_CreditCardPayForOrder%%" />
+        </p>
+    </div>
+</form>
+%%GLOBAL_AdditionalPaymentPageContents%%
+%%Panel.SquarePaymentJavaScript%%

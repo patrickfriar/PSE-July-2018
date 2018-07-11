@@ -1,0 +1,417 @@
+/* === QuickView Styles Start === */
+
+/* QuickView start */
+.QuickViewBtn a, .QuickViewBtn a:hover {
+	text-decoration: none !important;
+}
+.QuickViewBtn {
+
+	position: absolute;
+	cursor: pointer;
+	padding: 6px 10px 8px 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none !important;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display:inline-block;
+	line-height: 11px;
+	
+}
+/* QuickView end */
+
+/* QuickView modal window start */
+#ModalContainer.QuickViewModal {
+	width: 850px !important;
+	height: auto !important;
+	margin-left: -425px !important;
+	border: 0px solid #1f1f1c;
+	background: #ffffff;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	
+}
+
+#ModalContainer.QuickViewModal .modalData {
+	height: 100%;
+}
+
+#ModalContentContainer {
+	height: 100%;
+    border: solid #333 3px;
+    -webkit-border-radius: 0px !important;
+-moz-border-radius: 0px !important;
+border-radius: 0px !important;
+background: #fff;
+}
+
+#ModalContainer.QuickViewModal .ModalTitle {
+	display: none!important;	
+}
+
+#ModalContainer.QuickViewModal .ModalContent {
+	height: auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	
+}
+.QuickViewModal .modalClose{
+	right: 10px!important;
+	top: 12px!important;
+}
+.QuickViewModal .productAttributeRow ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.QuickViewModal .OutOfStockMessage{
+	float: right;
+	display: block;
+	clear: none;
+	padding: 0;
+}
+#ModalContent, .ModalContent{
+	border: none!important;
+	font-size: inherit;
+}
+
+.QuickViewModal .addToCart .Button{
+	margin-right: 5px;
+}
+
+.QuickViewModal a, .QuickViewModal a {
+    color: #f94743!important;
+}
+
+.QuickViewModal a:hover, .QuickViewModal a:hover {
+    color: #444!important;
+}
+.QuickViewModal .ProductDetailsGrid .s-price{
+	float: left;
+	clear: both;
+	width: 100%;
+	padding-top: 5px;
+}
+ #QuickViewProductDetails .s-price .Label, 
+ #QuickViewProductDetails .s-price .Value{
+	width: auto;
+	text-align: left;
+	padding-left: 0;
+}
+
+html.javascript .productOptionViewRectangle .option label {
+	border: solid 1px #cccbca; /* template colour */
+}
+
+/* highlighting of the border for the currently selected rectangle value */
+html.javascript .productOptionViewRectangle .selectedValue label {
+	background: #f94743!important;
+	color: #ffffff!important;
+}
+ 
+/* QuickView modal window end */
+
+/* QuickView top nav panel start */
+
+#QuickViewTopNav {
+	background-color: #DDDDDD;
+	line-height: 20px;
+    padding: 5px 10px;
+}
+
+#QuickViewFacebookContainer, #QuickViewShareLabel, #QuickViewShareLinksContainer {
+	height: 20px;
+	float: none;
+	clear: both;
+	text-align: center;
+}
+
+.addthis_default_style 
+.addthis_separator, .addthis_default_style .at300b, 
+.addthis_default_style .at300bo, .addthis_default_style .at300m, 
+.addthis_default_style .at300bs {
+display: inline-block;
+*display: inline;
+zoom: 1;
+float: none;
+margin: 0 2px;
+}
+
+
+#QuickViewTopNav .facebookLikeBtn {
+	width: 80px;
+	height:22px;
+}
+
+#QuickViewTopNav .facebookRecommendBtn {
+	width: 125px;
+	height:22px;
+}
+
+#QuickViewTopNavReviews, #QuickViewTopNavRating {
+	margin-left: 7px;
+	float: left!important;
+}
+
+#QuickViewTopNavRating img {
+	width: 13px;
+	height: 13px;
+    margin-top: 3px;
+}
+#QuickViewShareLinksContainer{
+	padding: 15px;
+}
+#QuickViewFacebookContainer{
+	padding: 0 15px;
+}
+
+/* QuickView top nav panel end */
+
+/* QuickView content start */
+
+#QuickViewContent {
+	clear: both;
+	padding: 20px;
+}
+.ModalContent.Content {
+	float: none;
+	min-height: 359px;
+	width: auto;
+}
+
+#QuickViewImage, #QuickViewProductDetails {
+}
+
+#QuickViewImage {
+	float:left;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	border: 1px solid #ededed;
+}
+
+.qprod{
+	float: left;
+	width: 45%;
+}
+
+#QuickViewImage img{
+	max-height: 400px;
+	max-width: 100%;
+	width: auto!important;
+	height: auto!important;
+}
+
+.scrollContainer table tbody tr td{
+	margin: 0;
+}
+
+.scrollContainer td.none .image{
+	display: none;
+}
+/* QuickView content end */
+
+/* QuickView product details start */
+
+#QuickViewProductDetails {
+	
+	float: right;
+    overflow-y: visible;
+    overflow-x: visible;
+    padding: 0 9px 10px 20px;
+    width: 45%;
+    position: relative;
+    
+}
+#QuickViewProductDetails  .scrollContainer {
+width: 420px;
+}
+
+#QuickViewProductDetails div {
+	display: inline-block;
+}
+
+#QuickViewProductDetails div.productAttributeFluidWidth {
+	width: auto !important;
+}
+
+#QuickViewProductDetails table.productDetails {
+	text-align: left;
+	vertical-align: top;
+	border: none;
+	padding: 0;
+	margin: 0;
+	width: 99%;
+}
+
+#QuickViewProductDetails tr.detailRow {
+}
+
+#QuickViewProductDetails td, #QuickViewProductDetails .productAttributeRow, .DetailRow {
+	padding-top: 8px;
+	vertical-align: top;
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+#QuickViewProductDetails .Label, #QuickViewProductDetails .productAttributeLabel {
+	font-weight: bold;
+	padding-right: 5px;
+	text-align: left;
+	width: 100px;
+	position: relative;
+	float:left;	
+}
+
+#QuickViewProductDetails .p-price{
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+#QuickViewProductDetails .Value, #QuickViewProductDetails .productAttributeValue,
+#QuickViewProductDetails .Label, #QuickViewProductDetails .productAttributeLabel {
+	float: left;
+	width: 100%;
+	padding-bottom: 5px;
+}
+#QuickViewProductDetails .Value, #QuickViewProductDetails .productAttributeValue{
+	padding: 0 0 10px 0;
+}
+
+#QuickViewProductDetails .ProductDetailsGrid .DetailRow{
+	padding: 0;
+}
+
+#QuickViewProductDetails .ProductAddToCart ul,
+#QuickViewProductDetails .ProductAddToCart ul li {
+	list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#QuickViewProductDetails .required,
+#QuickViewProductDetails .Required {
+	color: red;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: -10px;
+}
+
+.leftPanel{
+	clear: both;
+}
+
+/* QuickView product details start */
+
+/* QuickView buttons start */
+
+#QuickViewProductDetails button {
+	
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+	line-height: 18px;
+	font-size: 11px;
+
+	color: #444;
+	display: inline-block;
+
+	padding: 3px 8px;
+
+	background: #F3F3F3;
+	border: solid 1px #D9D9D9;
+
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+
+	-webkit-transition: border-color .20s;
+	-moz-transition: border-color .20s;
+	-o-transition: border-color .20s;
+	transition: border-color .20s;
+	
+	vertical-align: middle;
+	cursor: pointer;
+	
+}
+
+#QuickViewProductDetails button:hover {
+    background: #F4F4F4;
+	border-color: #C0C0C0;
+	color: #333;
+}
+
+#QuickViewProductDetails button:active {
+	border-color: #4D90FE;
+	color: #4D90FE;
+
+	-moz-box-shadow:inset 0 0 10px #D4D4D4;
+	-webkit-box-shadow:inset 0 0 10px #D4D4D4;
+	box-shadow:inset 0 0 10px #D4D4D4;
+}
+
+#QuickViewProductDetails button.blue {
+	
+	color: #fff;
+	border: 1px solid #3079ED !important;
+
+	background: #4B8DF8;
+	background: -webkit-linear-gradient(top, #4C8FFD, #4787ED);
+	background: -moz-linear-gradient(top, #4C8FFD, #4787ED);
+	background: -ms-linear-gradient(top, #4C8FFD, #4787ED);
+	background: -o-linear-gradient(top, #4C8FFD, #4787ED);
+
+	-webkit-transition: border .20s;
+	-moz-transition: border .20s;
+	-ms-transition: border .20s;
+	-o-transition: border .20s;
+	transition: border .20s;
+}
+
+#QuickViewProductDetails button.blue:hover {
+	border: 1px solid #2F5BB7 !important;
+
+	background: #3F83F1;
+	background: -webkit-linear-gradient(top, #4D90FE, #357AE8);
+	background: -moz-linear-gradient(top, #4D90FE, #357AE8);
+	background: -ms-linear-gradient(top, #4D90FE, #357AE8);
+	background: -o-linear-gradient(top, #4D90FE, #357AE8);
+}
+
+#QuickViewProductDetails button.addToCart {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#QuickViewProductDetails .addToCart {
+	vertical-align: middle;
+}
+
+/* QuickView buttons end */
+
+#ProductDetails div.dateselector {
+	display: inline;
+}
+
+#ProductDetails select.month, #ProductDetails select.year,
+#EventDateMonth, #EventDateYear {
+	width: 75px;
+}
+
+#ProductDetails select.day, #EventDateDay {
+	width: 75px;
+}
+#QuickViewProductDetails .ProductDetailsGrid .s-price .DetailRow {
+padding: 6px 20px;
+}
+#uniform-qty_ {
+width: 75px !important;	
+}
+/* === QuickView Styles End === */

@@ -1,0 +1,106 @@
+<style type="text/css">
+#MaintenanceNotice {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	font-weight: bold;
+	text-align: center;
+	top: 0;
+	left: 0;
+}
+
+.MaintenanceModeNotice {
+	cursor: move;
+	background-color:yellow;
+	border:2px solid #FFD800;
+	padding:10px;
+	font-size: 11px;
+	line-height:1.8em;
+	left: 20px;
+	position: absolute;
+	top: 20px;
+	width: 260px;
+	z-index: 10000;
+	color: black;
+	font-family: arial, "sans serif", sans-serif;
+}
+
+.MaintenanceModeHeader {
+	height: 21px;
+	cursor: move;
+	background-image: url('%%GLOBAL_IMG_PATH%%/info.png');
+	background-repeat: no-repeat;
+	background-position: 1px 1px;
+	padding-left: 25px;
+	font-weight: bold;
+}
+
+.AdminBar {
+    background-color: white;
+    box-shadow: 0 0.14286rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+    color: black;
+    font-family: "Source Sans Pro", arial, "sans serif", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    float: left;
+    height: 46px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.AdminBarLogo {
+    width: 45px;
+    height: 46px;
+    float: left;
+    background-color: #273a8a;
+}
+
+.AdminBarLogo img {
+    width: 28px;
+    height: 28px;
+    padding: 7px 10px 11px 7px;
+}
+
+.AdminBarContent {
+    padding: 17px 20px 14px 20px;
+    margin-left: 45px;
+}
+
+.AdminBarContent span {
+    float:right;
+    color: #626568;
+}
+
+.AdminBarContent .passcode {
+    padding-left: 9px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 480px) {
+    body#home {
+        padding-top: 46px;
+    }
+
+    .AdminBarContent {
+        padding: 10px 20px 0px 22px;
+    }
+}
+
+</style>
+
+<script src="%%GLOBAL_jQueryUIPath%%" type="text/javascript"></script>
+<script src="%%GLOBAL_CdnAppPath%%/javascript/maintenance.js?%%GLOBAL_JSCacheToken%%" type="text/javascript"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	MaintenanceNotice.AdminMaintenanceNoticeHeader = "%%GLOBAL_AdminHiddenStoreNoticeHeader%%";
+	MaintenanceNotice.AdminMaintenanceNotice = "%%GLOBAL_AdminHiddenStoreNotice%%";
+	MaintenanceNotice.GuestPassword = "%%GLOBAL_GuestPassword%%";
+	MaintenanceNotice.LogoPath = '%%GLOBAL_IMG_PATH%%/logo-small.svg';
+	MaintenanceNotice.init();
+});
+</script>
+

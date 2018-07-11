@@ -1,0 +1,88 @@
+%%Panel.DOCTYPE%%
+
+<html lang="%%GLOBAL_LanguageCode%%" dir="%%GLOBAL_TextDirection%%">
+
+<head>
+
+	
+
+	<title>%%Page.WindowTitle%%</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=%%GLOBAL_CharacterSet%%" />
+	<meta name="description" content="%%Page.MetaDescription%%" />
+	<meta name="keywords" content="%%Page.MetaKeywords%%" />
+	%%GLOBAL_AdditionalMetaTags%%
+	%%Page.CanonicalLink%%
+	%%Page.NextLink%%
+	%%Page.PrevLink%%
+	%%Page.Robots%%
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+
+	<link href='//fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+
+
+	%%GLOBAL_HeadFonts%%
+
+	<link rel="shortcut icon" href="%%GLOBAL_Favicon%%" />
+
+	<!-- begin: js page tag -->
+	<script language="javascript" type="text/javascript">//<![CDATA[
+		(function(){
+			// this happens before external dependencies (and dom ready) to reduce page flicker
+			var node, i;
+			for (i = window.document.childNodes.length; i--;) {
+				node = window.document.childNodes[i];
+				if (node.nodeName == 'HTML') {
+					node.className += ' javascript';
+				}
+			}
+		})();
+	//]]></script>
+	<!-- end: js page tag -->
+
+	%%GLOBAL_Stylesheets%%
+
+	<link href='//fonts.googleapis.com/css?family=Merriweather:400,700,300' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Josefin+Slab:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+
+	<!-- Tell the browsers about our RSS feeds -->
+	%%GLOBAL_HeadRSSLinks%%
+
+	<!-- Include visitor tracking code (if any) -->
+	%%GLOBAL_TrackingCode%%
+
+	%%GLOBAL_DesignModeStyleSheet%%
+
+	%%GLOBAL_HeaderImageStyle%%
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="%%GLOBAL_CdnAppPath%%/javascript/menudrop.js?%%GLOBAL_JSCacheToken%%"></script>
+	<script type="text/javascript" src="%%GLOBAL_CdnAppPath%%/javascript/common.js?%%GLOBAL_JSCacheToken%%"></script>
+	<script type="text/javascript" src="%%GLOBAL_CdnAppPath%%/javascript/iselector.js?%%GLOBAL_JSCacheToken%%"></script>
+	<script type="text/javascript" src="%%GLOBAL_CdnAppPath%%/javascript/jquery/plugins/jquery.flexslider.js"></script>
+    <script src="%%GLOBAL_CdnAppPath%%/javascript/viewport.js??%%GLOBAL_JSCacheToken%%"></script>
+
+	<!-- Template bespoke js -->
+	<script type="text/javascript" src="%%GLOBAL_TPL_PATH%%/js/jquery.autobox.js"></script>
+
+	<script type="text/javascript" src="%%GLOBAL_TPL_PATH%%/js/init.js"></script>
+
+	<script type="text/javascript" src="%%GLOBAL_TPL_PATH%%/js/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="%%GLOBAL_TPL_PATH%%/js/main.js?%%GLOBAL_JSCacheToken%%"></script>
+
+	<script type="text/javascript">
+	//<![CDATA[
+	config.ShopPath = '%%GLOBAL_ShopPath%%';
+	config.AppPath = ''; // BIG-8939: Deprecated, do not use.
+	config.FastCart = %%GLOBAL_FastCart%%;
+	config.ShowCookieWarning = !!%%GLOBAL_ShowCookieWarningMessage%%;
+	var ThumbImageWidth = %%GLOBAL_ProductThumbImageWidth%%;
+	var ThumbImageHeight = %%GLOBAL_ProductThumbImageHeight%%;
+	//]]>
+	</script>
+	%%GLOBAL_AdditionalScriptTags%%
+	%%GLOBAL_QuickSearchJS%%
+	%%GLOBAL_RTLStyles%%
+</head>

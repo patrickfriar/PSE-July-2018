@@ -1,0 +1,24 @@
+<div class="Content Wide %%GLOBAL_ExtraCategoryClass%%" id="LayoutColumn1">
+	<div class="product-nav">
+			%%SNIPPET_CategorySortBox%%
+			%%SNIPPET_BrandPaging%%
+		<br class="Clear" />
+	</div>
+	<div class="BlockContent">
+		<script type="text/javascript">
+		lang.CompareSelectMessage = '%%LNG_CompareSelectMessage%%';
+		</script>
+		<form name="frmCompare" id="frmCompare" action="%%GLOBAL_CompareLink%%" method="get" onsubmit="return compareProducts('%%GLOBAL_CompareLink%%')">
+			%%Panel.BrandProductListing%%
+			<div class="product-nav btm">
+				<div class="PagingBottom">
+					%%SNIPPET_BrandPaging%%
+				</div>
+				<br class="Clear" />
+			</div>
+			<div class="CompareButton" style="display:%%GLOBAL_HideCompareItems%%">
+				<input value="%%LNG_CompareSelected%%"  type="submit" class="btn" />
+			</div>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,37 @@
+<div id="fastCartContainer"><div id="fastCartWrapper">
+	<div class="fastCartContent">
+		<div class="fastCartTop">
+			<div class="fastCartThumb" style="%%GLOBAL_HideThumbColumn%%">%%GLOBAL_fastCartProdImg%%&nbsp;</div>
+			<div class="fastCartItemBox">
+				<p><strong>%%GLOBAL_fastCartQuantityTxt%%</strong></p>
+				<div>%%GLOBAL_fastCartProdLink%%</div>
+				<p class="Quantity">Quantity: %%GLOBAL_fastCartQuantity%%</p>
+				<div><em class="ProductPrice">%%GLOBAL_fastCartProdTotal%%</em></div>
+			</div>
+			<div class="fastCartSummaryBox">
+				<div class="ProceedToCheckout">
+					<div class="CheckoutButton" style="%%GLOBAL_HideCheckoutButton%%">
+						<a href="%%GLOBAL_CheckoutLink%%" title="%%LNG_CheckoutButtonTitle%%" class="btn">Proceed to Checkout</a>
+					</div>
+					%%GLOBAL_AdditionalCheckoutButtons%%
+				</div>
+				<div class="subtotal"><span>%%LNG_OrderSubtotal%%</span>
+					<em class="ProductPrice">%%GLOBAL_fastCartSubtotal%%</em>
+				</div>
+				<div class="actionLink">
+				<div>%%LNG_YourCartContains%% <span id="fastCartNumItemsTxt">%%GLOBAL_fastCartNumItemsTxt%%</span></div>
+					<a href="#" onclick="$('.modalClose').trigger('click');">%%LNG_ContinueShopping%%</a> %%LNG_Or%%<br>
+					<a href="%%GLOBAL_ShopPath%%/cart.php">%%LNG_ViewEditCart%%</a>
+				</div>
+			</div>
+		</div>
+		<br class="Clear" />
+		<div class="fastCartBottom" style="%%GLOBAL_HideSuggestiveCartContent%%">
+			<h6 class="sub-title">%%LNG_YouMayAlsoLike%%</h6>
+			<ul class="ProductList" id="fastCartSuggestive">
+				%%GLOBAL_SuggestedProductListing%%
+			</ul>
+		</div>
+	</div>
+	<br class="Clear" />
+</div></div>

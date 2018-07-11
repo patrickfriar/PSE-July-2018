@@ -1,0 +1,275 @@
+@import url(//fonts.googleapis.com/css?family=Helvetica+Neue|Audiowide|Freckle+Face|Exo+2|Hammersmith+One|Ceviche+One|Open+Sans);
+/*
+
+!!!!!!!!!! WARNING !!!!!!!!!!
+
+If you edit theme.css, your changes will be overwritten by any compilation of theme.less
+Please remember to replicate your changes in init.less, or just make your changes in another file if possible
+
+!!!!!!!!!! WARNING !!!!!!!!!!
+
+*/
+/**
+ *   Bigcommerce Munchen with Less
+ *   – For the Less variables and functions that you don't want available in the Style Editor, declare them in this file.
+ */
+/**
+ *   Bigcommerce Munchen with Less
+ *
+ *   For compatability with the Bigcommerce Style Editor:
+ *    + Import your Google fonts first
+ *
+ *    + Declare your fonts for use in the editor by using '@font-declaration' (JSON format)
+ *      eg @font-declaration: '{ "Open Sans":["Open Sans","Arial","sans-serif"], "Freckle Face":["Freckle Face","cursive"] }'
+ *
+ *    + Declare your color palette for use in the editor by using '@color-declaration'
+ *      eg @color-declaration: '["#333", "#1399BE", "#EDEDED", "#FFF"]';
+ *
+ *    + Prefix fonts with '@font-' for the style editor to make it editable by the end user
+ *
+ *    + Prefix colors with '@color-' for the style editor to make it editable by the end user
+ *
+ *    + Prefix settings with '@setting-' for the style editor to make it adjustable by the end user
+ */
+/**
+ *   Declarations   
+ */
+/**
+ *   Bigcommerce Munchen
+ *   Style Initialisation
+ */
+#Container {
+  border-top: 7px solid #000000;
+}
+#Header {
+  background-color: #ffffff;
+}
+#TopMenu {
+  background-color: #ffffff;
+}
+#TopMenu li a,
+.currency-converter p span,
+.PageMenu li a:hover,
+.PageMenu .ActivePage a {
+  color: #f94743;
+}
+.PageMenu li.over > a.hasSub,
+.PageMenu li ul li a:hover {
+  color: #f94743 !important;
+}
+#SearchForm .Button:hover {
+  background-color: #f94743;
+}
+.PageMenu {
+  background-color: #ffffff;
+}
+#Logo h1 a {
+  color: #000000;
+}
+.PageMenu {
+  border-top: 1px solid #1f1f1c;
+}
+#Outer .PageMenu .sf-menu > li:hover {
+  border-top-color: #f94743;
+}
+.PageMenu li a {
+  color: #000000;
+}
+#FooterUpper {
+  border-top: 5px solid #000000;
+}
+#ContainerFooter {
+  background-color: #f7f7f7;
+}
+#Footer .PageMenu ul {
+  background-color: #f7f7f7;
+}
+#ContainerFooter h2 {
+  color: #312e29 !important;
+  border-bottom: 1px solid #a8a297;
+}
+#Footer .PageMenu li a {
+  color: #312e29 !important;
+}
+#Footer .PageMenu li {
+  border-left: 1px solid #312e29;
+}
+#FooterUpper li a {
+  color: #312e29;
+}
+#ContainerFooter strong a {
+  color: #312e29;
+}
+#HomeRecentBlogs strong,
+b {
+  color: #312e29;
+}
+#Footer p {
+  color: #312e29;
+}
+#Footer p a {
+  color: #312e29;
+}
+#ContainerFooter .NewsletterSubscription .Button {
+  border: 1px solid #040404;
+  background-color: #1f1f1c;
+}
+#ContainerFooter .NewsletterSubscription .Button:hover {
+  border: 1px solid #1f1f1c;
+  background-color: #3a3a34 !important;
+}
+#Footer .PageMenu ul {
+  border-bottom: 1px solid #000000;
+}
+#Footer ul {
+  border-top: 1px solid #000000;
+}
+#HomeFeaturedProducts h3,
+#HomeNewProducts h3 {
+  color: #312e29 !important;
+}
+#HomeFeaturedProducts .ProductList .pname,
+#HomeNewProducts .ProductList .pname {
+  color: #1f1f1c;
+}
+#HomeFeaturedProducts .ProductDetails em,
+#HomeNewProducts .ProductDetails em {
+  color: #1f1f1c;
+}
+#home .ProductList li .ProductActionAdd a {
+  background-color: #f94743 !important;
+}
+#home .ProductList li .ProductActionAdd a:hover {
+  background-color: #333 !important;
+}
+#ProductDetails h6 a {
+  color: #1f1f1c !important;
+}
+.PrimaryProductDetails h2 {
+  color: #f94743;
+}
+.left-content .ProductList .ProductDetails .pname {
+  color: #f94743;
+}
+.ProductDetailsGrid .DetailRow.PriceRow .Value em {
+  color: #312e29;
+}
+.left-content .ProductList em.p-price {
+  color: #312e29;
+}
+#prodAccordion .Block.current h2 {
+  color: #1f1f1c;
+}
+#prodAccordion .Block h2 {
+  color: #1f1f1c;
+}
+#SimilarProductsByCustomerViews h6 {
+  color: #1f1f1c;
+}
+#ProductDetails .prodAccordionContent {
+  color: #1f1f1c;
+}
+.ProductDetailsGrid .Label {
+  color: #1f1f1c;
+}
+div.selector span {
+  color: #1f1f1c;
+}
+#ProductDetails .ProductMain {
+  color: #1f1f1c;
+}
+#ProductDescription p strong {
+  color: #1f1f1c;
+}
+#ProductDetails .btn-addtocart {
+  background-color: #f94743;
+  border: 1px solid #f71712;
+}
+.btn-addto {
+  color: #f94743;
+}
+#ProductDetails h2 {
+  color: #f94743;
+}
+#QuickViewProductDetails .productAttributeLabel {
+  color: #1f1f1c;
+}
+#ModalContent a,
+.ModalContent a {
+  color: #1f1f1c;
+}
+h2,
+.TitleHeading {
+  color: #f94743;
+}
+.Left #SideCategoryList .sf-menu a,
+.Left #SideCategoryList h2 span,
+.Left .slist h2 span {
+  color: #1f1f1c;
+}
+#CategoryContent .ProductList .pname,
+#CategoryContent .ProductList .p-name a {
+  color: #1f1f1c;
+}
+#CategoryContent .ProductList .p-price {
+  color: #1f1f1c;
+}
+.ProductList li .ProductActionAdd .icon-Add.To,
+#CategoryContent .ProductList li .ProductActionAdd .icon-Choose.Options {
+  background-color: #f94743 !important;
+}
+.ProductList li .ProductActionAdd .icon-Add.To:hover,
+#CategoryContent .ProductList li .ProductActionAdd .icon-Choose.Options:hover {
+  background-color: #333 !important;
+}
+#CategoryContent .btn {
+  background-color: #333333;
+}
+body {
+  background: #ffffff;
+}
+.ProductList .ProductDetails {
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+/* --- Faceted Search --- */
+.facet-container {
+  border-top: 1px solid #e4e4e4;
+}
+.facet-container [class^="js-facet-clear"] {
+  color: #8a8a7d;
+}
+.facet-container [class^="js-facet-clear"]:hover {
+  color: #55554c;
+}
+.facet-container .btn-facet-more-options {
+  color: #1f1f1c !important;
+}
+.facet-container .btn-facet-more-options:hover {
+  color: #312e29;
+}
+.facet-container .facet-option:hover {
+  background: #e4e4e4;
+}
+.facet-container .facet-option .facet-option-product-count {
+  color: #8a8a7d;
+}
+.js-faceted-search-container > [class^='js-facet-']:last-of-type .facet-container {
+  border-bottom: 1px solid #e4e4e4;
+}
+.js-faceted-showing-container .facet-container {
+  border-top: 0;
+}

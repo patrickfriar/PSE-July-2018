@@ -1,0 +1,25 @@
+					%%GLOBAL_NewsletterBoxControlScript%%
+
+				<div class="Block NewsletterSubscription Moveable Panel" id="SideNewsletterBox">
+
+					<h2>Newsletter</h2>
+					%%GLOBAL_NewsletterSummary%%
+
+
+					<div class="BlockContent">
+						<form action="%%GLOBAL_ShopPath%%/subscribe.php" method="post" id="subscribe_form" name="subscribe_form">
+							<input type="hidden" name="action" value="subscribe" />
+							<ul>
+							<li><label for="nl_first_name">Name</label>
+								<input class="Textbox" id="nl_first_name" name="nl_first_name" type="text" /></li>
+							<li><label for="nl_email">Email</label>
+								<input class="Textbox" id="nl_email" name="nl_email" type="text" /></li>
+							<li><label>&nbsp;</label>
+
+                                                         <input value="Submit" class="Button btn-small" type="submit" />
+                                                        </li>
+						</ul>
+						</form>
+					</div>
+				</div>
+				%%Panel.NewsletterJavaScript%%

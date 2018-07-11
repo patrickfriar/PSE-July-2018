@@ -1,0 +1,31 @@
+%%GLOBAL_MaintenanceNotice%%
+<header>
+<div class="container">
+	<button class="bars">
+		<i class="fa fa-bars"></i>
+	</button>
+	<div id="Logo">
+		<a href="/"><img src="%%GLOBAL_CdnStorePath%%/product_images/%%GLOBAL_StoreLogo%%" alt="%%GLOBAL_StoreName%% Logo" width="157" height="44"></a>
+	</div>
+	<nav>
+		%%Panel.SideCategoryList%% <!-- THAT MEANS SNIPPET NOT PANEL? (THX BC) -->
+	</nav>
+	<div id="HeaderRight">
+		<button id="AjaxLoading">
+			<i class="fa fa-refresh fa-spin"></i>
+		</button>
+		<button class="search">
+			<i class="fa fa-search"></i>
+		</button>
+		<div id="SearchForm">
+			<form action="%%GLOBAL_ShopPath%%/search.php" method="get" onsubmit="return check_small_search_form()">
+				<input type="text" name="search_query" id="search_query" class="Textbox autobox" placeholder="Search products..." />
+			</form>
+		</div>
+    	%%Panel.TopMenu%%
+		<button href="%%GLOBAL_ShopPathNormal%%/cart.php">
+			<i class="fa fa-shopping-cart"></i>
+		</button>
+	</div>
+</div>
+</header>

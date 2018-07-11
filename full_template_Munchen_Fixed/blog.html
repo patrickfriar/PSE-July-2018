@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+%%Panel.HTMLHead%%
+<body>
+	<div id="Container">
+		%%Panel.Header%%
+		<div id="Wrapper">
+			%%Panel.WrapperBanner%%
+			<div class="Content Wide WideWithRight" id="LayoutColumn2">
+				%%Panel.NewsBreadcrumb%%
+				<h1>%%GLOBAL_BlogName%%</h1>
+				%%SNIPPET_RecentPostsContent%%
+				<div class="product-nav btm">
+					<div class="Block Moveable Panel PagingBottom" id="CategoryPagingBottom">
+						<div class="CategoryPagination BloggingPagination" style="display: %%GLOBAL_HideSectionPaging%%">
+							<div class="FloatLeft">
+								%%GLOBAL_SectionPagingPrevious%%
+							</div>
+							<div class="FloatRight">
+								%%GLOBAL_SectionPagingNext%%
+							</div>
+							<ul class="PagingList">
+								%%GLOBAL_SectionPaging%%
+							</ul>
+						</div>
+					</div>
+					<br class="Clear">
+				</div>
+			</div>
+			<div class="Right" id="LayoutColumn1">
+				%%Panel.BlogRecentPosts%%
+			</div>
+			<br class="Clear" />
+		</div>
+		%%Panel.Footer%%
+	</div>
+</body>
+</html>

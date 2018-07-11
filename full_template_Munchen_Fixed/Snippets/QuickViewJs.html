@@ -1,0 +1,18 @@
+ShowImageZoomer = false;
+$(document).ready(function() {
+	
+	function loadQuickView() {
+		$(".QuickView").quickview({
+			buttonText: "%%GLOBAL_QuickViewButtonText%%",
+			buttonColor: "%%GLOBAL_QuickViewButtonColor%%",
+			gradientColor: "%%GLOBAL_QuickViewGradientColor%%",
+			textColor: "%%GLOBAL_QuickViewTextColor%%"
+		});
+	}
+
+	$(document).on('SearchReload', function() {
+		loadQuickView();
+	});
+
+	loadQuickView();
+});
